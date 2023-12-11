@@ -1,31 +1,23 @@
 .button {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 10px;
-
+  position: relative;
   padding: 12px 24px;
   border-radius: 16px;
-
+  justify-content: center;
   font-family: inherit;
   font-size: 16px;
-
   letter-spacing: 0.03em;
   line-height: 1;
-
   transition: 0.2s ease;
-
   cursor: pointer;
-
   &:hover {
     opacity: 0.65;
   }
 }
 
 .transparent {
-  align-items: center;
-  justify-content: center;
-  display: inline-flex;
-  font-family: inherit;
 
   color: var(--colors-primary);
   background-color: transparent;
@@ -33,13 +25,32 @@
 }
 
 .blue {
+  border: 0px;
+  border-radius: 16px;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 48px;
+  padding: 0px 24px;
   background-color: #1fc7d4;
   color: var(--colors-light-invertedContrast);
-
-  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  margin-right: 8px;
 }
 
 .white {
+  border: 0px;
+  border-radius: 16px;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 48px;
+  padding: 0px 24px;
   background-color: white;
   color: #1fc7d4;
+  margin-right: 8px;
 }
